@@ -20,11 +20,18 @@
     if (nav.length) {
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
-      }, 1500, 'easeInOutExpo');
+      }, 1000, 'easeInOutExpo');
 
       event.preventDefault();
     }
   });
+
+  $('.btn-submit').click(function(event){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000, 'easeInOutExpo');
+    event.preventDefault();
+});
 
 
   //jQuery to collapse the navbar on scroll

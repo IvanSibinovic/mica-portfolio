@@ -160,10 +160,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease-in-out;
   margin-top: 25px;
   border: 2px solid #FFD34E;
+  border-radius: 8px;
 }
 
 .btn-submit:hover {
-  background: #fff;
+  background: #e49954;
+  font-weight: bold;
 }
 
 /****/
@@ -412,6 +414,12 @@ a, a:hover {
 
 /****/
 
+@media (max-width: 700px) {
+  .bg-image-2 {
+  background: url('../img/bannered-small.jpg') no-repeat center fixed;
+  }
+}
+
 @media (min-width: 451px) and (max-width: 900px) {
   .section-title {
     margin-bottom: 15px;
@@ -480,3 +488,49 @@ a, a:hover {
   font-weight: bold;
   letter-spacing: 1px;
  }
+
+ /*CARDSS**/
+.cardBox {
+      margin: 1rem;
+      perspective: 1000px;
+      font-family: 'Ubuntu', sans-serif;
+      width: 300px;
+    }
+    .card {
+      position: relative;
+      margin: 0 auto;
+      line-height: 0;
+      transition: 1s ease;
+    }
+    .card .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      transition: 700ms opacity linear;
+    }
+    .p11 {
+      background: url('../img/11under.jpg');
+    }
+    .p12 {
+      background: url('../img/12under.jpg');
+    }
+    .p21 {
+      background: url('../img/21under.jpg');
+    }
+    .p22 {
+      background: url('../img/22under.jpg');
+    }
+    .p31 {
+      background: url('../img/31under.jpg');
+    }
+    .p32 {
+      background: url('../img/32under.jpg');
+    }
+
+    .card:hover .back
+    {
+      opacity: 0;
+    }
