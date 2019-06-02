@@ -2,6 +2,7 @@ body {
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -490,11 +491,14 @@ a, a:hover {
  }
 
  /*CARDSS**/
+ img {
+  width: 260px;
+ }
 .cardBox {
       margin: 1rem;
       perspective: 1000px;
       font-family: 'Ubuntu', sans-serif;
-      width: 300px;
+      width: 260px;
     }
     .card {
       position: relative;
@@ -512,7 +516,7 @@ a, a:hover {
       transition: 700ms opacity linear;
     }
     .p11 {
-      background: url('../img/11under.jpg');
+      background: url('../img/11under.jpg') center;
     }
     .p12 {
       background: url('../img/12under.jpg');
@@ -533,4 +537,7 @@ a, a:hover {
     .card:hover .back
     {
       opacity: 0;
+    }
+    .card:hover {
+      z-index: 22;
     }
